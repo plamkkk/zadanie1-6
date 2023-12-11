@@ -1,7 +1,15 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularz</title>
+</head>
+<body>
 <form>
   <table>
     <tr>
-      <td><label for="name">Imiê:</label></td>
+      <td><label for="name">Imię:</label></td>
       <td><input type="text" id="name" name="name"></td>
       <td><label for="surname">Nazwisko:</label></td>
       <td><input type="text" id="surname" name="surname"></td>
@@ -9,16 +17,25 @@
       <td><input type="date" id="dob" name="dob"></td>
     </tr>
     <tr>
-      <td colspan="4"></td>
-    <tr>
-      <td colspan="4"></td>
+      <td><label for="game">Wybierz grę która Cię interesuje:</label></td>
+      <td>
+        <select id="game" name="game">
+          <option value="CS2">CS2</option>
+          <option value="LOL">LOL</option>
+          <option value="DOTA2">DOTA2</option>
+          <option value="Fortnite">Fortnite</option>
+        </select>
+      </td>
+      <td colspan="2"></td>
     </tr>
     <tr>
       <td colspan="2" align="center">
-        <input type="submit" value="Wyœlij">
+        <input type="submit" value="Wyślij">
         <input type="reset" value="Resetuj">
       </td>
       <td colspan="2"></td>
     </tr>
   </table>
 </form>
+</body>
+</html>
