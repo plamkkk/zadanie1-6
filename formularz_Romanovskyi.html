@@ -4,38 +4,86 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formularz</title>
+  <style>
+    body {
+      background-color: yellow;
+    }
+  </style>
 </head>
 <body>
-<form>
-  <table>
-    <tr>
-      <td><label for="name">Imię:</label></td>
-      <td><input type="text" id="name" name="name"></td>
-      <td><label for="surname">Nazwisko:</label></td>
-      <td><input type="text" id="surname" name="surname"></td>
-      <td><label for="dob">Data urodzenia:</label></td>
-      <td><input type="date" id="dob" name="dob"></td>
-    </tr>
-    <tr>
-      <td><label for="game">Wybierz grę która Cię interesuje:</label></td>
-      <td>
-        <select id="game" name="game">
-          <option value="CS2">CS2</option>
-          <option value="LOL">LOL</option>
-          <option value="DOTA2">DOTA2</option>
-          <option value="Fortnite">Fortnite</option>
-        </select>
-      </td>
-      <td colspan="2"></td>
-    </tr>
-    <tr>
-      <td colspan="2" align="center">
-        <input type="submit" value="Wyślij">
-        <input type="reset" value="Resetuj">
-      </td>
-      <td colspan="2"></td>
-    </tr>
-  </table>
-</form>
+  <form>
+    <table>
+      <tr>
+        <td><label for="name">Imię:</label></td>
+        <td><input type="text" id="name" name="name"></td>
+        <td><label for="surname">Nazwisko:</label></td>
+        <td><input type="text" id="surname" name="surname"></td>
+        <td><label for="dob">Data urodzenia:</label></td>
+        <td><input type="date" id="dob" name="dob"></td>
+      </tr>
+      <tr>
+        <td><label for="game">Wybierz grę, która Cię interesuje:</label></td>
+        <td>
+          <select id="game" name="game">
+            <option value="CS2">CS2</option>
+            <option value="LOL">LOL</option>
+            <option value="DOTA2">DOTA2</option>
+            <option value="Fortnite">Fortnite</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="team_exp">Czy masz doświadczenie drużynowe?</label></td>
+        <td>
+          <select id="team_exp" name="team_exp">
+            <option value="yes">Tak</option>
+            <option value="no">Nie</option>
+            <option value="some">Trochę</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="account">Posiadasz konto:</label></td>
+        <td>
+          <select id="account" name="account">
+            <option value="steam">Steam</option>
+            <option value="origin">Origin</option>
+            <option value="epic_games">Epic Games</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="availability">Dostępność czasowa:</label></td>
+        <td>
+          <select id="availability" name="availability">
+            <option value="Cały dzień">Cały dzień</option>
+            <option value="6 godzin">6 godzin</option>
+            <option value="2 godziny">2 godziny</option>
+            <option value="1 godzina">1 godzina</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="os">Twój system operacyjny:</label></td>
+        <td>
+          <select id="os" name="os">
+            <option value="Windows">Windows</option>
+            <option value="Linux">Linux</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="reason">Dlaczego mamy Cię przyjąć?</label></td>
+        <td><textarea id="reason" name="reason"></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          <input type="submit" value="Wyślij">
+          <input type="reset" value="Resetuj">
+        </td>
+        <td colspan="2"></td>
+      </tr>
+    </table>
+  </form>
 </body>
 </html>
